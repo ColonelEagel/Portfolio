@@ -1,0 +1,184 @@
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+nav .nav-link:hover,
+nav .nav-link.active {
+    color: #007bff;
+}
+
+/* About section styles */
+#about {
+    padding: 100px 0;
+}
+
+#about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#about .skills {
+    margin-top: 50px;
+}
+
+#about .skills ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#about .skills ul li {
+    margin-bottom: 10px;
+}
+
+#about .skills ul li .skill-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+#about .skills ul li .skill-progress {
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+}
+
+#about .skills ul li .skill-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff;
+}
+
+/* Portfolio section styles */
+#portfolio {
+    padding: 100px 0;
+}
+
+#portfolio h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio .portfolio-item .portfolio-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+}
+
+#portfolio .portfolio-item:hover .portfolio-details {
+    transform: translateY(0);
+}
+
+#portfolio .portfolio-item .portfolio-details h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#portfolio .portfolio-item .portfolio-details p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-details a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#portfolio .portfolio-item .portfolio-details a:hover {
+    background: #fff;
+    color: #000;
+}
