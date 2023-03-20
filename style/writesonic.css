@@ -8,90 +8,9 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #87CEEB;
+    color: #FFFFFF;
 }
 
-header {
-    /* background-color: #ffffff; */
-    position: relative;
-    z-index: 100;
-}
-
-/* nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-} */
-
-/* .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
-
-/* nav ul {
-    display: flex;
-    gap: 2rem;
-}
-
-nav li {
-    font-size: 1.2rem;
-}
-
-
-nav li a:hover {
-    color: #2196f3;
-    background: rgba(255, 255, 255, 0.2);
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid rgba(225, 225, 225, 0.5);
-    z-index: 1000;
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.navbar-logo a {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-menu li {
-    margin: 0 10px;
-}
-
-.navbar-menu li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #333;
-    transition: all 0.2s ease-in-out;
-    font-family: soleil, sans-serif;
-    font-weight: 100;
-    font-size: 25px;
-    padding: 19px 16px;
-    transition: background 0.4s, text-shadow 0.4s;
-    cursor: pointer;
-} */
 .navbar {
     position: fixed;
     top: 0;
@@ -136,9 +55,145 @@ nav li a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.navbar-menu li a:hover {
-    color: #f8f8f8;
+nav li a:hover {
+    color: #2196f3;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
+
+section#Welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bad Script', cursive;
+}
+
+section#Welcome img {
+    width: 16vw
+}
+
+section#Welcome h1 {
+    color: #212121;
+    font-size: 6em;
+}
+
+section#Welcome h1 span {
+    display: table-cell;
+    animation: blue-stunning 3.5s linear infinite;
+
+}
+
+section#Welcome h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+section#Welcome h1 span:nth-child(2) {
+    animation-delay: .25s;
+}
+
+section#Welcome h1 span:nth-child(3) {
+    animation-delay: .5s;
+}
+
+section#Welcome h1 span:nth-child(4) {
+    animation-delay: .75s;
+}
+
+section#Welcome h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+section#Welcome h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+section#Welcome h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+section#Welcome h1 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+section#Welcome h1 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+section#Welcome h1 span:nth-child(10) {
+    animation-delay: 2.25s;
+}
+
+section#Welcome h1 span:nth-child(11) {
+    animation-delay: 2.5s;
+}
+
+section#Welcome h1 span:nth-child(12) {
+    animation-delay: 2.75s;
+}
+
+section#Welcome h1 span:nth-child(13) {
+    animation-delay: 3s;
+}
+
+section#Welcome h1 span:nth-child(14) {
+    animation-delay: 3.25s;
+}
+
+@keyframes blue-stunning {
+
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 100px #00b3ff;
+    }
+
+    5%,
+    95% {
+        color: #212121;
+        filter: blur(0);
+        text-shadow: 0 0 10px none;
+    }
+}
+
+#text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: #fff;
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+}
+
 /* .navbar-menu li a:hover {
     color: #666;
 } */

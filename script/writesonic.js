@@ -125,7 +125,7 @@ function wavesBackground()
     {
         // Calculate the new camera position based on the current scroll position
         const deltaY = window.scrollY - prevScrollY;
-        camera.position.y += deltaY * 3; // adjust the value to control the speed of the movement
+        camera.position.y += deltaY * 10; // adjust the value to control the speed of the movement
         prevScrollY = window.scrollY;
     }
 
@@ -152,3 +152,70 @@ function wavesBackground()
 
 // Call the function to generate the waves background
 wavesBackground();
+
+// var slogans = [
+//     "Building better web experiences, one project at a time.",
+//     "Code that transforms ideas into reality.",
+//     "Developing digital solutions that make a difference.",
+//     "Crafting web experiences that connect people.",
+//     "Bringing your ideas to life through web development.",
+//     "Designing websites that exceed expectations.",
+//     "Your partner in web development success.",
+//     "Delivering customized web solutions for your unique needs.",
+//     "Expert web development for businesses of all sizes.",
+//     "Empowering your brand with powerful web solutions."
+// ];
+
+// var options = {
+//     strings: slogans,
+//     typeSpeed: 60,
+//     backSpeed: 40,
+//     backDelay: 2000,
+//     loop: true,
+//     showCursor: true, // show the blinking cursor
+//     cursorChar: '|', // set the cursor character to '|'
+// };
+
+// var typed = new Typed('#slogan', options);
+
+const texts = [
+    "Building better web experiences, one project at a time.",
+    "Code that transforms ideas into reality.",
+    "Developing digital solutions that make a difference.",
+    "Crafting web experiences that connect people.",
+    "Bringing your ideas to life through web development.",
+    "Designing websites that exceed expectations.",
+    "Your partner in web development success.",
+    "Delivering customized web solutions for your unique needs.",
+    "Expert web development for businesses of all sizes.",
+    "Empowering your brand with powerful web solutions."
+];
+
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+function type()
+{
+    if (count === texts.length)
+    {
+        count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector('#text p').textContent = letter;
+    if (letter.length === currentText.length)
+    {
+        count++;
+        index = 0;
+        setTimeout(type, 2000);
+    } else
+    {
+        setTimeout(type, 90);
+    }
+
+}
+
+type();
